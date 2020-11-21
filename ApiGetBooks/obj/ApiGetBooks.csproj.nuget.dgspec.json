@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Engre\\Source\\Repos\\rennan12\\BackendTest\\ApiGetBooks\\ApiGetBooks.csproj": {}
+    "C:\\Users\\Engre\\source\\repos\\rennan12\\BackendTest\\ApiGetBooks\\ApiGetBooks.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Engre\\Source\\Repos\\rennan12\\BackendTest\\ApiGetBooks\\ApiGetBooks.csproj": {
+    "C:\\Users\\Engre\\source\\repos\\rennan12\\BackendTest\\ApiGetBooks\\ApiGetBooks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Engre\\Source\\Repos\\rennan12\\BackendTest\\ApiGetBooks\\ApiGetBooks.csproj",
+        "projectUniqueName": "C:\\Users\\Engre\\source\\repos\\rennan12\\BackendTest\\ApiGetBooks\\ApiGetBooks.csproj",
         "projectName": "ApiGetBooks",
-        "projectPath": "C:\\Users\\Engre\\Source\\Repos\\rennan12\\BackendTest\\ApiGetBooks\\ApiGetBooks.csproj",
+        "projectPath": "C:\\Users\\Engre\\source\\repos\\rennan12\\BackendTest\\ApiGetBooks\\ApiGetBooks.csproj",
         "packagesPath": "C:\\Users\\Engre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Engre\\Source\\Repos\\rennan12\\BackendTest\\ApiGetBooks\\obj\\",
+        "outputPath": "C:\\Users\\Engre\\source\\repos\\rennan12\\BackendTest\\ApiGetBooks\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Engre\\AppData\\Roaming\\NuGet\\NuGet.Config",

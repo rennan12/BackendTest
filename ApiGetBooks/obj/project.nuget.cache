@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "izjkYOZxYrZjT65NT8cJBTTBDs3aqDOnAG8OvEIi9K5CVvdR4ZuMT3ZY38rCFtBpMKs+8rMIO9hL3ihUqrGxsQ==",
+  "dgSpecHash": "bQx2cl7zdPDNBQDbXmByhwSmcFLgzI+C831d9t1laZjRHvhX1Z0YoAixl4YXt+ZK+wbooFiiXIgZfnFT91+k5A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Engre\\Source\\Repos\\rennan12\\BackendTest\\ApiGetBooks\\ApiGetBooks.csproj",
+  "projectFilePath": "C:\\Users\\Engre\\source\\repos\\rennan12\\BackendTest\\ApiGetBooks\\ApiGetBooks.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
