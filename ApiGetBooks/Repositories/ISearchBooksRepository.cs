@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace ApiGetBooks.Repositories {
     public interface ISearchBooksRepository {
-        List<Books> GetAll();
-        List<Books> GetAll(Constants.Order a);
+        List<Books> GetAll(string sort);
         List<Books> GetId(int id);
-        List<Books> GetName(string name, string sort);
+        List<Books> GetName(string param, string sort);
         List<Books> GetPrice(double price);
+        List<Books> GetOriginallyPublished(string param, string sort);
+        List<Books> GetAuthor(string param, string sort);
+        List<Books> GetPageCount(int param, string sort);
+        List<Books> GetIllustrator(string param, string sort);
+        List<Books> GetGenres(string param, string sort);
+        double? GetValueShipping(int id);
     }
 }

@@ -22,13 +22,6 @@ namespace ApiGetBooks {
 
         public void ConfigureServices(IServiceCollection services) {
             InjectDependence.Inject(services);
-            services.AddControllers();
-            services.AddApiVersioning(x => {
-                x.DefaultApiVersion = new ApiVersion(1, 0);
-                x.AssumeDefaultVersionWhenUnspecified = true;
-                x.ReportApiVersions = true;
-                x.ApiVersionReader = new HeaderApiVersionReader("x-api-version");
-            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

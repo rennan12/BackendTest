@@ -18,10 +18,10 @@ namespace ApiGetBooks.Entities {
 
 
         [JsonPropertyName("Illustrator")]
-        public object Illustrator { get; set; }
-        /*Os campos Illustrator e Genres, devem ser do tipo object pois o json fornecido, 
-        tem diferentes tipos de dados no mesmo parâmetro. Hora é objeto, hora é array */
+        public dynamic Illustrator { get; set; }
+        /*Os campos Illustrator e Genres, devem ser do tipo dynamic pois o json fornecido, 
+        tem diferentes tipos de dados no mesmo parâmetro. Hora é simple, hora é collection */
         [JsonPropertyName("Genres")]
-        public object Genres { get; set; }
+        public dynamic Genres { get; set; }
     }
 }
