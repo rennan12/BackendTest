@@ -43,7 +43,7 @@ A requisição chega no TestConstroller que faz a requisição em cadeia das cla
 * De start na aplicação ApiGetBooks
 * Entre com os endpoints indicados abaixo
 
-##### Publiquei o projeto provisoriamente no link:  [Buscar livros](http://rennanf12-001-site1.etempurl.com/books) | [Teste](http://rennanf12-001-site1.etempurl.com/test)
+##### Publiquei o projeto provisoriamente no link:  [Buscar livros][Books] | [Teste][Test]
 
 ## Endpoints
 ### GET /Books/  
@@ -51,29 +51,29 @@ A requisição chega no TestConstroller que faz a requisição em cadeia das cla
 |  /Books/ | Ação  | Exemplo  |
 |:---|:---|:---|
 |  / |  Mostra todos os registros ordenados por id | [/][books]
-|  /ascending |  Mostra todos os registros ordenados por preço ascendente. |[/ascending][books]
-|  /descending |  Mostra todos os registros ordenados por preço desendente. |[descending][books]
-|  /id/numero |  Mostra o livro do id informado |  [id/1][books]
-|  /name/nome do livro |  Mostra os livros pesquisados por nome e ordenados pelo id | [name/leagues][books]
-|  /name/nome do livro/ascending |  Mostra os livros pesquisados por nome ordenados por preço ascendente | [name/l/ascending][books]
-|  /name/nome do livro/descending |  Mostra os livros pesquisados por nome ordenados por preço descendente| [name/l/descending][books]
-|  /price/numero |  Mostra o registro do livro com o preço informado | [price/11.15][books]
-|  /originally_published/nome | Mostra os livros pesquisados por data de publicação e ordenados pelo id | [originally_published/November][books]
-|  /originally_published/nome/ascending | Mostra os livros pesquisados por data de publicação e ordenados por preço ascendente  | [originally_published/November/ascending][books]
-|  /originally_published/nome/descending | Mostra os livros pesquisados por data de publicação e ordenados por preço descendente | [originally_published/November/descending][books]
-|  /author/nome | Mostra os livros pesquisados por autor e ordenados pelo id | [author/j][books]
-|  /author/nome/ascending | Mostra os livros pesquisados por autor e ordenados por preço ascendente  | [author/j/ascending][books]
-|  /author/nome/descending | Mostra os livros pesquisados por autor e ordenados por preço descendente | [author/j/descending][books]
-|  /page_count/numero | Mostra os livros pesquisados por numero de pagina e ordenados pelo id | [page_count/715][books]
-|  /page_count/numero/ascending | Mostra os livros pesquisados por numero de pagina e ordenados por preço ascendente  | [page_count/715/ascending][books]
-|  /page_count/numeor/descending | Mostra os livros pesquisados por numero de pagina e ordenados por preço descendente | [page_count/715/descending][books]
-|  /illustrator/nome | Mostra os livros pesquisados por ilustrador e ordenados pelo id | [illustrator/r][books]
-|  /illustrator/nome/ascending | Mostra os livros pesquisados por ilustrador e ordenados por preço ascendente  | [illustrator/r/ascending][books]
-|  /illustrator/nome/descending | Mostra os livros pesquisados por ilustrador e ordenados por preço descendente | [illustrator/r/descending][books]
-|  /genres/nome | Mostra os livros pesquisados por genero e ordenados pelo id | [genres/r][books]
-|  /genres/nome/ascending | Mostra os livros pesquisados por genero e ordenados por preço ascendente  | [genres/r/ascending][books]
-|  /genres/nome/descending | Mostra os livros pesquisados por genero e ordenados por preço descendente | [genres/r/descending][books]
-|  /shipping/id | Mostra o valor do frete em 20% do valor do livro pesquisado | [shipping/1][books]
+|  /ascending |  Mostra todos os registros ordenados por preço ascendente. |ascending
+|  /descending |  Mostra todos os registros ordenados por preço desendente. |descending
+|  /id/numero |  Mostra o livro do id informado |  id/1
+|  /name/nome do livro |  Mostra os livros pesquisados por nome e ordenados pelo id | name/leagues
+|  /name/nome do livro/ascending |  Mostra os livros pesquisados por nome ordenados por preço ascendente | name/l/ascending
+|  /name/nome do livro/descending |  Mostra os livros pesquisados por nome ordenados por preço descendente| name/l/descending
+|  /price/numero |  Mostra o registro do livro com o preço informado | price/11.15
+|  /originally_published/nome | Mostra os livros pesquisados por data de publicação e ordenados pelo id | originally_published/November
+|  /originally_published/nome/ascending | Mostra os livros pesquisados por data de publicação e ordenados por preço ascendente  | originally_published/November/ascending
+|  /originally_published/nome/descending | Mostra os livros pesquisados por data de publicação e ordenados por preço descendente | originally_published/November/descending
+|  /author/nome | Mostra os livros pesquisados por autor e ordenados pelo id | author/j
+|  /author/nome/ascending | Mostra os livros pesquisados por autor e ordenados por preço ascendente  | author/j/ascending
+|  /author/nome/descending | Mostra os livros pesquisados por autor e ordenados por preço descendente | author/j/descending
+|  /page_count/numero | Mostra os livros pesquisados por numero de pagina e ordenados pelo id | page_count/715
+|  /page_count/numero/ascending | Mostra os livros pesquisados por numero de pagina e ordenados por preço ascendente  |page_count/715/ascending
+|  /page_count/numeor/descending | Mostra os livros pesquisados por numero de pagina e ordenados por preço descendente | page_count/715/descending
+|  /illustrator/nome | Mostra os livros pesquisados por ilustrador e ordenados pelo id | illustrator/r
+|  /illustrator/nome/ascending | Mostra os livros pesquisados por ilustrador e ordenados por preço ascendente  | illustrator/r/ascending
+|  /illustrator/nome/descending | Mostra os livros pesquisados por ilustrador e ordenados por preço descendente | illustrator/r/descending
+|  /genres/nome | Mostra os livros pesquisados por genero e ordenados pelo id | genres/r
+|  /genres/nome/ascending | Mostra os livros pesquisados por genero e ordenados por preço ascendente  | genres/r/ascending
+|  /genres/nome/descending | Mostra os livros pesquisados por genero e ordenados por preço descendente | genres/r/descending
+|  /shipping/id | Mostra o valor do frete em 20% do valor do livro pesquisado | shipping/1
 
 ### GET /Test/  
 
@@ -82,9 +82,14 @@ A requisição chega no TestConstroller que faz a requisição em cadeia das cla
 |  / |  Mostra o teste de todas as classes e metodos as aplicação| [/][Test]
 
 ## Declarações finais
+Gostei muito de ter feito este projeto. Me ajudou a fixar varios conhecimento que havia esquecido.
+O processo e anotações sobre o projeto estão [nesse link](https://github.com/rennan12/BackendTest/projects/1).
+O projeto precisa de muita refatoração ainda, isso foi o que eu consegui dado tempo e meus conhecimento limitados.
 
-Autor: Rennan Furst | contato: engcivil.rennan@gmail.com
+Autor: Rennan Furst
+Contato: engcivil.rennan@gmail.com
 
 
-[Books]: <http://rennanf12-001-site1.etempurl.com/books>
-[Test]: <http://rennanf12-001-site1.etempurl.com/test>
+[Books]: <rennanf12-001-site1.etempurl.com/books>
+[Test]: <rennanf12-001-site1.etempurl.com/test>
+
