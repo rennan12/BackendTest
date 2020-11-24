@@ -1,7 +1,5 @@
 ## Sobre o projeto
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 Um cliente tem necessidade de buscar livros em um catálogo. Esse cliente quer ler e buscar esse catálogo de um arquivo JSON, e esse arquivo não pode ser modificado. Então com essa informação, é preciso desenvolver:
 
 - Criar uma API simples para buscar produtos no arquivo JSON disponibilizado.
@@ -19,24 +17,24 @@ Será avaliado no desafio:
 - Conhecimento em controle de versão;
 
 Para nos enviar o código, crie um fork desse repositório e quando finalizar, mande um pull-request para nós.
-
 O projeto deve ser desenvolvido em C#, utilizando o .NET Core 2.2 ou superior.
-
 Gostaríamos que fosse evitado a utilização de frameworks, e que tivesse uma explicação do que é necessário para funcionar o projeto e os testes.
-
-### Feito usando exclusivamente a linguagem C#
 
 ## Declarações iniciais
 
+Projeto feito usando exclusivamente a linguagem C#.
 Resolvi não usar o XUnit para sair da zona de conforto.
 Fiz os testes no mesmo projeto para evitar duplicação desnecessaria de codigo.
+Todos os arquivos de test estão na pasta Test.
 
 A arquitetura do projeto esta muito simples, sem o uso de DTOS, UnitOfWorks, DDD e por aí vai.
 
-Fluxograma:
-A requisição chega na controller Books que destina para o metodo Get de acordo com o requerimento e aciona os metodos que estão no caminho Repositories.SearchBooksRepository.
+Fluxograma da API:
+A requisição chega no BooksController que destina para o metodo Get de acordo com o requerimento, aciona os metodos que estão no caminho Repositories.SearchBooksRepository.
 Os metodos do arquivo SearchBooksRepository fazem uma busca linq no arquivo Json já desserializado pelo metodo estatico LoadAllJson que esta na pasta raiz.ManageJson e retorna para controller com resultado da busca, o ActionResult faz Ok-200 e a serialização do arquivo Json ou null acionando assim o BadRequest 404.
 
+Fluxograma do Teste:
+A requisição chega no TestConstroller que faz a requisição em cadeia das classes que por sua vez fazem o acionamento em cadeia dos metodos testes, retornão para o Get da controller que concatena os resultados e retorna um Json com todos os testes.
 
 ## Instruções de uso
 
@@ -45,108 +43,34 @@ Solução: BackendTest/ApiGetBooks/ApiGetBooks.sln
 Para os teste da API e os testes unitarios não necessario o Debug. Bastando assim
 
 
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ```
+# Endpoints
 
 
+## GET /Books/  
 
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
-
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+|  /Books/ | Ação  | Exemplo  |
+|:---|:---|:---|
+|  / |  Mostra todos os registros | /
+|  /ascending |  Mostra todos os registros ordenados por preço ascendente. |/ascending
+|  /descending |  Mostra todos os registros ordenados por preço desendente. |/descending
+|  /id/numero |  Mostra o livro do id informado |  /id/1
+|  /name/nome do livro |  Mostra os livros pesquisados por nome e ordenados pelo id | /name/leagues
+|  /name/nome do livro/ascending |  Mostra os livros pesquisados por nome ordenados por preço ascendente | /name/l/ascending
+|  /name/nome do livro/descending |  Mostra os livros pesquisados por nome ordenados por preço descendente| /name/l/descending
+|  /price/numero |  Mostra o registro do livro com o preço informado | /price/11.15
+|  /originally_published/nome | Mostra os livros pesquisados por data de publicação e ordenados pelo id | originally_published/November
+|  /originally_published/nome/ascending | Mostra os livros pesquisados por data de publicação e ordenados por preço ascendente  | originally_published/November/ascending
+|  /originally_published/nome/descending | Mostra os livros pesquisados por data de publicação e ordenados por preço descendente | originally_published/November/descending
+|  /author/nome | Mostra os livros pesquisados por autor e ordenados pelo id | author/j
+|  /author/nome/ascending | Mostra os livros pesquisados por autor e ordenados por preço ascendente  | author/j/ascending
+|  /author/nome/descending | Mostra os livros pesquisados por autor e ordenados por preço descendente | author/j/descending
+|  /page_count/numero | Mostra os livros pesquisados por numero de pagina e ordenados pelo id | page_count/715
+|  /page_count/numero/ascending | Mostra os livros pesquisados por numero de pagina e ordenados por preço ascendente  | page_count/715/ascending
+|  /page_count/numeor/descending | Mostra os livros pesquisados por numero de pagina e ordenados por preço descendente | page_count/715/descending
+|  /illustrator/nome | Mostra os livros pesquisados por ilustrador e ordenados pelo id | illustrator/r
+|  /illustrator/nome/ascending | Mostra os livros pesquisados por ilustrador e ordenados por preço ascendente  | illustrator/r/ascending
+|  /illustrator/nome/descending | Mostra os livros pesquisados por ilustrador e ordenados por preço descendente | illustrator/r/descending
+|  /genres/nome | Mostra os livros pesquisados por genero e ordenados pelo id | genres/r
+|  /genres/nome/ascending | Mostra os livros pesquisados por genero e ordenados por preço ascendente  | genres/r/ascending
+|  /genres/nome/descending | Mostra os livros pesquisados por genero e ordenados por preço descendente | genres/r/descending
+|  /shipping/id | Mostra o valor do frete em 20% do valor do livro pesquisado | shipping/1
