@@ -25,3 +25,4 @@ C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\bin\Debug\netcoreap
 C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\obj\Debug\netcoreapp3.1\ApiGetBooks.csprojAssemblyReference.cache
+C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\bin\Debug\netcoreapp3.1\books.json

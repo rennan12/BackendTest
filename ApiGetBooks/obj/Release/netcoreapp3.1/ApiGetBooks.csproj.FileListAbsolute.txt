@@ -25,3 +25,4 @@ C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\obj\Release\netcore
 C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\obj\Release\netcoreapp3.1\ApiGetBooks.dll
 C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\obj\Release\netcoreapp3.1\ApiGetBooks.pdb
 C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\obj\Release\netcoreapp3.1\ApiGetBooks.genruntimeconfig.cache
+C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\bin\Release\netcoreapp3.1\books.json

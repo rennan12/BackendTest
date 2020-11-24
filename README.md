@@ -50,7 +50,7 @@ Para os teste da API e os testes unitarios não necessario o Debug. Bastando ass
 
 |  /Books/ | Ação  | Exemplo  |
 |:---|:---|:---|
-|  / |  Mostra todos os registros | /
+|  / |  Mostra todos os registros ordenados por id | /
 |  /ascending |  Mostra todos os registros ordenados por preço ascendente. |/ascending
 |  /descending |  Mostra todos os registros ordenados por preço desendente. |/descending
 |  /id/numero |  Mostra o livro do id informado |  /id/1
@@ -74,3 +74,9 @@ Para os teste da API e os testes unitarios não necessario o Debug. Bastando ass
 |  /genres/nome/ascending | Mostra os livros pesquisados por genero e ordenados por preço ascendente  | genres/r/ascending
 |  /genres/nome/descending | Mostra os livros pesquisados por genero e ordenados por preço descendente | genres/r/descending
 |  /shipping/id | Mostra o valor do frete em 20% do valor do livro pesquisado | shipping/1
+
+## GET /Test/  
+
+|  /Test/ | Ação  | Exemplo  |
+|:---|:---|:---|
+|  / |  Mostra o teste de todas as classes e metodos as aplicação| /

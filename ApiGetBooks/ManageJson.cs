@@ -8,7 +8,7 @@ namespace ApiGetBooks {
         public static List<Books> LoadAllJson() {
 
             try {
-                string json = File.ReadAllText(@"../books.json");
+                string json = File.ReadAllText(@"books.json");
                 List<Books> BooksJson = JsonSerializer.Deserialize<List<Books>>(json);
                 return BooksJson;
             }

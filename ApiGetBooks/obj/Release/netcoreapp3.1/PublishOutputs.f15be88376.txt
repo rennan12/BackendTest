@@ -1,0 +1,13 @@
+C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\obj\Release\netcoreapp3.1\PubTmp\Out\ApiGetBooks.exe
+C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\obj\Release\netcoreapp3.1\PubTmp\Out\books.json
+C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\obj\Release\netcoreapp3.1\PubTmp\Out\ApiGetBooks.dll
+C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\obj\Release\netcoreapp3.1\PubTmp\Out\ApiGetBooks.deps.json
+C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\obj\Release\netcoreapp3.1\PubTmp\Out\ApiGetBooks.runtimeconfig.json
+C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\obj\Release\netcoreapp3.1\PubTmp\Out\ApiGetBooks.pdb
+C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\obj\Release\netcoreapp3.1\PubTmp\Out\System.Net.Http.Formatting.dll
+C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\obj\Release\netcoreapp3.1\PubTmp\Out\System.Web.Http.dll
+C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.dll
+C:\Users\Engre\source\repos\rennan12\BackendTest\ApiGetBooks\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.Bson.dll
