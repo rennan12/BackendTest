@@ -1,22 +1,28 @@
 ﻿using ApiGetBooks.Entities;
 using ApiGetBooks.Repositories;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using static ApiGetBooks.Repositories.SearchBooksRepository;
 
 namespace ApiGetBooks.Controllers {
     [Route("[Controller]")]
     [ApiController]
     [ApiVersion("1.0")] // controle de versão da API
+
+
+
     public class BooksController : Controller {
+
         protected readonly ISearchBooksRepository _SearchBooksrepository;
         public BooksController(ISearchBooksRepository SearchBooksrepository) {
             _SearchBooksrepository = SearchBooksrepository;
-
         }
+
         [HttpGet]
         [Route("{sort?}")]
         public ActionResult<List<Books>> GetAll(string sort) {

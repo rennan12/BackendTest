@@ -6,9 +6,17 @@ using System.Text.Json;
 namespace ApiGetBooks {
     public static class ManageJson {
         public static List<Books> LoadAllJson() {
-            string json = File.ReadAllText(@"../books.json");
-            List<Books> Books = JsonSerializer.Deserialize<List<Books>>(json);
-            return Books;
+
+            try {
+                string json = File.ReadAllText(@"../books.json");
+                List<Books> BooksJson = JsonSerializer.Deserialize<List<Books>>(json);
+                return BooksJson;
+            }
+            catch (System.IO.FileNotFoundException ex) {
+
+                throw ex;
+            }
+
         }
     }
 }

@@ -10,16 +10,16 @@ namespace ApiGetBooks.Repositories {
 
         readonly List<Books> JsonAll = ManageJson.LoadAllJson();
 
-        public List<Books> ascendingPrice(IEnumerable<Books> list) {
+        public List<Books> AscendingPrice(IEnumerable<Books> list) {
             return list.OrderBy(x => x.Price).ToList();
         }
-        public List<Books> descendingPrice(IEnumerable<Books> list) {
+        public List<Books> DescendingPrice(IEnumerable<Books> list) {
             return list.OrderByDescending(x => x.Price).ToList();
         }
 
         public List<Books> GetAll(string sort) {
-            if (sort == "ascending") return ascendingPrice(JsonAll);
-            if (sort == "descending") return descendingPrice(JsonAll);
+            if (sort == "ascending") return AscendingPrice(JsonAll);
+            if (sort == "descending") return DescendingPrice(JsonAll);
             if (sort == null) return JsonAll;
             else { return null; }
         }
@@ -32,8 +32,8 @@ namespace ApiGetBooks.Repositories {
 
             var searchName = JsonAll.Where(x => x.Name.ToUpper().Contains(param.ToUpper()));
 
-            if (sort == "ascending") return ascendingPrice(searchName);
-            if (sort == "descending") return descendingPrice(searchName);
+            if (sort == "ascending") return AscendingPrice(searchName);
+            if (sort == "descending") return DescendingPrice(searchName);
             if (sort == null) return searchName.OrderBy(x => x.Id).ToList();
             else { return null; }
         }
@@ -46,8 +46,8 @@ namespace ApiGetBooks.Repositories {
 
             var searchOriginallyPublished = JsonAll.Where(x => x.Specifications.OriginallyPublished.ToUpper().Contains(param.ToUpper()));
 
-            if (sort == "ascending") return ascendingPrice(searchOriginallyPublished);
-            if (sort == "descending") return descendingPrice(searchOriginallyPublished);
+            if (sort == "ascending") return AscendingPrice(searchOriginallyPublished);
+            if (sort == "descending") return DescendingPrice(searchOriginallyPublished);
             if (sort == null) return searchOriginallyPublished.OrderBy(x => x.Id).ToList();
             else { return null; }
         }
@@ -56,8 +56,8 @@ namespace ApiGetBooks.Repositories {
 
             var searchAuthor = JsonAll.Where(x => x.Specifications.Author.ToUpper().Contains(param.ToUpper()));
 
-            if (sort == "ascending") return ascendingPrice(searchAuthor);
-            if (sort == "descending") return descendingPrice(searchAuthor);
+            if (sort == "ascending") return AscendingPrice(searchAuthor);
+            if (sort == "descending") return DescendingPrice(searchAuthor);
             if (sort == null) return searchAuthor.OrderBy(x => x.Id).ToList();
             else { return null; }
         }
@@ -66,8 +66,8 @@ namespace ApiGetBooks.Repositories {
 
             var searchPageCount = JsonAll.Where(x => x.Specifications.PageCount == param);
 
-            if (sort == "ascending") return ascendingPrice(searchPageCount);
-            if (sort == "descending") return descendingPrice(searchPageCount);
+            if (sort == "ascending") return AscendingPrice(searchPageCount);
+            if (sort == "descending") return DescendingPrice(searchPageCount);
             if (sort == null) return searchPageCount.OrderBy(x => x.Id).ToList();
             else { return null; }
         }
@@ -76,8 +76,8 @@ namespace ApiGetBooks.Repositories {
 
             var searchllustrator = JsonAll.Where(x => x.Specifications.Illustrator.ToString().ToUpper().Contains(param.ToUpper()));
 
-            if (sort == "ascending") return ascendingPrice(searchllustrator);
-            if (sort == "descending") return descendingPrice(searchllustrator);
+            if (sort == "ascending") return AscendingPrice(searchllustrator);
+            if (sort == "descending") return DescendingPrice(searchllustrator);
             if (sort == null) return searchllustrator.OrderBy(x => x.Id).ToList();
             else { return null; }
         }
@@ -86,8 +86,8 @@ namespace ApiGetBooks.Repositories {
 
             var searchGenres = JsonAll.Where(x => x.Specifications.Genres.ToString().ToUpper().Contains(param.ToUpper()));
 
-            if (sort == "ascending") return ascendingPrice(searchGenres);
-            if (sort == "descending") return descendingPrice(searchGenres);
+            if (sort == "ascending") return AscendingPrice(searchGenres);
+            if (sort == "descending") return DescendingPrice(searchGenres);
             if (sort == null) return searchGenres.OrderBy(x => x.Id).ToList();
             else { return null; }
         }
