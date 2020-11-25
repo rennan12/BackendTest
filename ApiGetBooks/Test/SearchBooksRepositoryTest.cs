@@ -1,4 +1,5 @@
-﻿using ApiGetBooks.Entities;
+﻿using ApiGetBooks.Controllers;
+using ApiGetBooks.Entities;
 using ApiGetBooks.Repositories;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -10,7 +11,7 @@ namespace ApiGetBooks.Test {
 
         protected readonly ISearchBooksRepository _SearchBooksrepository;
         public  SearchBooksRepositoryTest(ISearchBooksRepository SearchBooksrepository) {
-            _SearchBooksrepository = SearchBooksrepository;            
+            _SearchBooksrepository = SearchBooksrepository;
         }
 
         string classTestingHere = "SearchBooksRepository";
@@ -71,14 +72,6 @@ namespace ApiGetBooks.Test {
 
             var Test2 = _SearchBooksrepository.GetName("x", "ascending");
             result = Test2.Count == 0 ? result = Result.Ok : result = Result.Falhou;
-
-            //foreach (var item in Test1) {
-            //    if (Test1.Count > 1) {
-
-            //    }
-            //    var sd = Test1.IndexOf(item);
-
-            //}
 
             ListaDeTestes.Add(new EntitysTest() {
                 Classe = classTestingHere,

@@ -1,4 +1,5 @@
-﻿using ApiGetBooks.Repositories;
+﻿using ApiGetBooks.Controllers;
+using ApiGetBooks.Repositories;
 using ApiGetBooks.Test;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
@@ -11,6 +12,7 @@ namespace ApiGetBooks {
             services.AddScoped<SearchBooksRepositoryTest, SearchBooksRepositoryTest>();
             services.AddScoped<ManageJsonTest, ManageJsonTest>();
             services.AddControllers();
+
             services.AddApiVersioning(x => {
                 x.DefaultApiVersion = new ApiVersion(1, 0);
                 x.AssumeDefaultVersionWhenUnspecified = true;

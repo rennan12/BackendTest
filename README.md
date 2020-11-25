@@ -25,16 +25,16 @@ Gostaríamos que fosse evitado a utilização de frameworks, e que tivesse uma e
 Projeto feito usando exclusivamente a linguagem C#.
 Resolvi não usar o XUnit para sair da zona de conforto.
 Fiz os testes no mesmo projeto para evitar duplicação desnecessaria de codigo.
-Todos os arquivos de test estão na pasta Test.
+Todos os arquivos de teste estão na pasta Test.
 
 A arquitetura do projeto esta muito simples, sem o uso de DTOS, UnitOfWorks, DDD e por aí vai.
 
 Fluxograma da API:
-A requisição chega no BooksController que destina para o metodo Get de acordo com o requerimento, aciona os metodos que estão no caminho Repositories.SearchBooksRepository.
-Os metodos do arquivo SearchBooksRepository fazem uma busca linq no arquivo Json já desserializado pelo metodo estatico LoadAllJson que esta na pasta raiz.ManageJson e retorna para controller com resultado da busca, o ActionResult faz Ok-200 e a serialização do arquivo Json ou null acionando assim o BadRequest 404.
+A requisição chega no BooksController que destina para o metodo Get que esta no caminho Repositories.SearchBooksRepository.
+Os metodos do arquivo SearchBooksRepository fazem uma busca linq no arquivo Json já desserializado pelo metodo estatico LoadAllJson que esta na pasta raiz.ManageJson e retorna para controller com resultado da busca, o ActionResult faz Ok-200 e a serialização do arquivo Json ou null aciona o BadRequest.
 
 Fluxograma do Teste:
-A requisição chega no TestConstroller que faz a requisição em cadeia das classes que por sua vez fazem o acionamento em cadeia dos metodos testes, retornão para o Get da controller que concatena os resultados e retorna um Json com todos os testes.
+A requisição chega no TestConstroller que faz a requisição em cadeia das classes, que por sua vez fazem o acionamento em cadeia dos metodos testes da classe pertinente, retornão os resultados para o Get da controller que concatena os resultados e retorna um Json com todos os testes.
 
 ## Instruções de uso
 
@@ -75,21 +75,20 @@ A requisição chega no TestConstroller que faz a requisição em cadeia das cla
 |  /genres/nome/descending | Mostra os livros pesquisados por genero e ordenados por preço descendente | genres/r/descending
 |  /shipping/id | Mostra o valor do frete em 20% do valor do livro pesquisado | shipping/1
 
-### GET /Test/  
+### GET Test/  
 
-|  /Test/ | Ação  | Exemplo  |
+|  Test/ | Ação  | Exemplo  |
 |:---|:---|:---|
 |  / |  Mostra o teste de todas as classes e metodos as aplicação| [/][Test]
 
 ## Declarações finais
-Gostei muito de ter feito este projeto. Me ajudou a fixar varios conhecimento que havia esquecido.
-O processo e anotações sobre o projeto estão [nesse link](https://github.com/rennan12/BackendTest/projects/1).
-O projeto precisa de muita refatoração ainda, isso foi o que eu consegui dado tempo e meus conhecimento limitados.
+Gostei muito de ter feito este projeto. Me ajudou a fixar alguns conhecimento que havia esquecido.
+O processo de desenvolvimento e anotações sobre o projeto estão [nesse link](https://github.com/rennan12/BackendTest/projects/1).
+O projeto precisa de muita refatoração ainda, isso foi o que eu consegui fazer dado tempo e meus conhecimento limitados.
 
-Autor: Rennan Furst
-Contato: engcivil.rennan@gmail.com
+Autor: Rennan Furst | Contato: engcivil.rennan@gmail.com
 
 
-[Books]: <rennanf12-001-site1.etempurl.com/books>
-[Test]: <rennanf12-001-site1.etempurl.com/test>
+[Books]: <http://rennanf12-001-site1.etempurl.com/books>
+[Test]: <http://rennanf12-001-site1.etempurl.com/test>
 

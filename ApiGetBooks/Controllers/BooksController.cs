@@ -14,8 +14,6 @@ namespace ApiGetBooks.Controllers {
     [ApiController]
     [ApiVersion("1.0")] // controle de versão da API
 
-
-
     public class BooksController : Controller {
 
         protected readonly ISearchBooksRepository _SearchBooksrepository;
